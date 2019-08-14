@@ -3,7 +3,11 @@ package bob
 import "fmt"
 
 func Hello(name string) string {
-    return "Hello, " + name
+    if (name != "") {
+	return "Hello, " + name
+    } else {
+        return "Hello, World"
+    }
 }
 
 
